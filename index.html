@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>Metro Runner</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="importmap">
+    { "imports": { "three": "https://unpkg.com/three@0.160.0/build/three.module.js" } }
+  </script>
+</head>
+<body>
+  <div id="hud"><span id="score">0</span><span id="coins">🪙 0</span></div>
+  <div id="menu" class="overlay">
+    <h1>METRO RUNNER</h1>
+    <p>← → changer de voie · ↑ sauter · ↓ glisser<br>Sur mobile : swipe</p>
+    <button id="play">JOUER</button>
+  </div>
+  <div id="over" class="overlay hidden">
+    <h1>GAME OVER</h1>
+    <p id="final"></p>
+    <button id="retry">REJOUER</button>
+  </div>
+  <script type="module" src="game.js"></script>
+</body>
+</html>
